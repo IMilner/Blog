@@ -1,3 +1,5 @@
+//  Adding new JS
+
 // Get the modal
 var modal1 = document.getElementById("modal-div1");
 var modal2 = document.getElementById("modal-div2");
@@ -9,7 +11,7 @@ var rightBtn = document.querySelector(".right-btn");
 var btmBtn = document.querySelector(".btm-btn");
 
 // Get the <span> element that closes the modal
-var close = document.querySelector('.close-btn')
+let close = document.getElementsByClassName('close-btn')
 
 // When the user clicks the button, open the modal 
 leftBtn.onclick = function() {
@@ -21,28 +23,31 @@ rightBtn.onclick = function() {
 btmBtn.onclick = function() {
     modal3.style.display = "block";
 }
-  
+
 // When the user clicks on <span> (x), close the modal
-close.onclick = function() {
-  console.log('the button was clicked')
-  modal1.style.display = "none";
-  modal2.style.display = "none";
-  modal3.style.display = "none";
-  
-}
+close[0].addEventListener('click', function () {
+    modal1.style.display = "none";
+})
+
+close[1].addEventListener('click', function () {
+    modal2.style.display = "none";
+})
+
+close[2].addEventListener('click', function () {
+    modal3.style.display = "none";
+})
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal1) {
     modal1.style.display = "none";
   }
-  else if (event.target == modal2) {
+  if (event.target == modal2) {
     modal2.style.display = "none";
   }
-  else if (event.target == modal3) {
+  if (event.target == modal3) {
     modal3.style.display = "none";
   }
-  else {console.log('failed')}
 }
 
 // const text = document.getElementById("text");
