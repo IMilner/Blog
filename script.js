@@ -36,21 +36,18 @@ window.onclick = function(event) {
   if (event.target == modal1) {
     modal1.style.display = "none";
   }
-  if (event.target == modal2) {
+  else if (event.target == modal2) {
     modal2.style.display = "none";
   }
-  if (event.target == modal3) {
+  else if (event.target == modal3) {
     modal3.style.display = "none";
   }
-
+  else {console.log('failed')}
 }
-
-
 
 // const text = document.getElementById("text");
 
 // text.innerHTML = "Text";
-
 const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
 const button = document.querySelectorAll(".button");
