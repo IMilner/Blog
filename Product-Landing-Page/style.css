@@ -1,0 +1,662 @@
+body {
+    height: auto;
+    margin: 0;
+    background-image: url(images/merc-hood-croped.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+#nav-bar {
+    height: 8%;
+    width: 100%;
+    border-bottom: mediumaquamarine solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+#nav-bar-top1 {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+#title {
+    border-left: mediumturquoise solid 2px;
+    font-family: NSimSun;
+    margin: 0;
+    padding-left: 2%;
+    font-size: 350%;
+    font-weight: 100;
+}
+.nav-divs {
+    padding-top: 16px;
+    height: 180px;
+    width: 20%;
+}
+.nav-link {
+    margin: 1%;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    color: ivory;
+    font-size: 24px;
+    text-decoration: none;
+    border-left: mediumturquoise solid 2px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#nav-links-about {
+    color: white;
+}
+#nav-links-vehicles {
+    margin-bottom: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.sub-menu {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+}
+#sub-menu-text {
+    color: white;
+    font-size: 32px;
+    height: 48px;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-decoration: none;
+    /* opacity: 0; */
+}
+/* #sub-menu-text :hover {
+    opacity: 1;
+} */
+#nav-links-contact {
+    color: white;
+}
+#nav-bar-bottom {
+    height: 8%;
+    width: 100%;
+    border-top: mediumaquamarine solid 2px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+#main-title-div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main-title {
+    color: white;
+    font-size: 7em;
+    font-family: NSimSun;
+    letter-spacing: 1em;
+    font-weight: 100;
+    text-decoration: underline mediumturquoise 5px ;
+    align-items: center;
+}
+#about-us-div1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#about-us-div2 {
+    height: 40%;
+    width: 85%;
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#about-us-title {
+    color: white;
+    margin: 1%;
+    font-size: 48px;
+}
+#about-us-text {
+    color: white;
+    margin: 0;
+    font-size: 32px;
+    word-spacing: 1.5px;
+}
+#products-div{
+    height: 300vh;
+    width: 100%;
+    background-color: rgba(72, 209, 205, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#product-info1 {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+#img-div1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#img1 {
+    width: 75%;
+    border: mediumaquamarine solid 2px;
+}
+#img-caption {
+    color: white;
+    font-size: 24px;
+}
+p {
+    color: white;
+    font-size: 24px;
+}
+#video-div1 {
+    background-color: mediumaquamarine;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#video {
+    width: 95%;
+    border: black solid 2px;
+}
+#product-info2 {
+    height: 80vh;
+    width: 100%;
+    background-color: mediumaquamarine;
+    display: flex;
+    flex-direction: row;
+}
+#video-div2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#img2 {
+    width: 75%;
+    border: mediumaquamarine solid 2px;
+}
+#img-div2 {
+    background-color: black;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#video2 {
+    width: 95%;
+    border: black solid 2px;
+}
+#product-info3 {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+#img-div3 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#img3 {
+    width: 75%;
+    border: mediumaquamarine solid 2px;
+}
+#video-div3 {
+    background-color: mediumaquamarine;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#video3 {
+    width: 95%;
+    border: black solid 2px;
+}
+#footer-div{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer-h1 {
+    color: white;
+    margin: 5%;
+    font-size: 48px;
+}
+#contact-text-div {
+    height: 30%;
+    width: 50%;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 100;
+}
+#contact-text {
+    color: white;
+    font-size: 24px;
+}
+#email {
+    width: 500px;
+    height: 32px;
+    font-size: 16px;
+}
+#submit {
+    width: 100px;
+    height: 32px;
+    font-size: 16px;
+}
+#footer-h2 {
+    color: white;
+    font-size: 32px;
+    margin: 5%;
+}
+@media(max-width: 450px){
+    #product-info1{
+        flex-direction: column;
+    }
+    body {
+        height: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-image: url(images/merc-hood-croped.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed; */
+    }
+    header {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+    }
+    #header-img {
+        height: 75%;
+    }
+    #nav-bar {
+        height: 8%;
+        width: 100%;
+        border-bottom: mediumaquamarine solid 2px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: black;
+    }
+    #nav-bar-top1 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    #title {
+        border-left: mediumturquoise solid 2px;
+        font-family: NSimSun;
+        margin: 0;
+        font-size: 1.5em;
+    }
+    .nav-divs {
+        /* padding-top: 16px;
+        height: 180px;
+        width: 20%; */
+        display: none;
+    }
+    .nav-link {
+        /* margin: 1%;
+        padding-top: 1%;
+        padding-left: 2%;
+        padding-bottom: 1%;
+        padding-right: 2%;
+        color: ivory;
+        font-size: 24px;
+        text-decoration: none;
+        border-left: mediumturquoise solid 2px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none; */
+        display: none;
+    }
+    #nav-links-about {
+        /* color: white; */
+        display: none;
+    }
+    #nav-links-vehicles {
+        /* margin-bottom: 15px;
+        color: white;
+        display: flex;
+        flex-direction: column; */
+        display: none;
+    }
+    .sub-menu {
+        /* height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0; */
+        display: none;
+    }
+    #sub-menu-text {
+        /* color: white;
+        font-size: 32px;
+        height: 48px;
+        width: 75%;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        text-decoration: none; */
+        /* opacity: 0; */
+        display: none;
+    }
+    /* #sub-menu-text :hover {
+        opacity: 1;
+    } */
+    #nav-links-contact {
+        /* color: white; */
+        display: none;
+    }
+    #nav-bar-bottom {
+        height: 8%;
+        width: 100%;
+        border-top: mediumaquamarine solid 2px;
+        color: white;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    #main-title-div {
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/merc-hood-croped.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #main-title {
+        color: white;
+        font-size: 1.8em;
+        font-family: NSimSun;
+        letter-spacing: 1em;
+        font-weight: 100;
+        text-decoration: underline mediumturquoise 5px ;
+        align-items: center;
+    }
+    #about-us-div1 {
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #about-us-div2 {
+        height: 40%;
+        width: 85%;
+        padding: 3%;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #about-us-title {
+        color: white;
+        font-size: 2em;
+    }
+    #about-us-text {
+        color: white;
+        margin: 0;
+        font-size: 1em;
+    }
+    
+    #products-div{
+        height: 300vh;
+        width: 100%;
+        background-color: rgba(72, 209, 205, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #product-info1 {
+        height: 80vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #img-div1 {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #img1 {
+        width: 75%;
+        border: mediumaquamarine solid 2px;
+    }
+    
+    #img-caption {
+        color: white;
+        font-size: 24px;
+    }
+    
+    p {
+        color: white;
+        font-size: 24px;
+    }
+    
+    #video-div1 {
+        background-color: mediumaquamarine;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #video {
+        width: 95%;
+        border: black solid 2px;
+    }
+    
+    
+    #product-info2 {
+        height: 80vh;
+        width: 100%;
+        background-color: mediumaquamarine;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #video-div2 {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #img2 {
+        width: 75%;
+        border: mediumaquamarine solid 2px;
+    }
+    
+    #img-div2 {
+        background-color: black;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #video2 {
+        width: 95%;
+        border: black solid 2px;
+    }
+    
+    #product-info3 {
+        height: 80vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #img-div3 {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #img3 {
+        width: 75%;
+        border: mediumaquamarine solid 2px;
+    }
+    
+    #video-div3 {
+        background-color: mediumaquamarine;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #video3 {
+        width: 95%;
+        border: black solid 2px;
+    }
+    
+    #footer-div{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #footer-h1 {
+        color: white;
+        margin: 5%;
+        font-size: 48px;
+    }
+    
+    #contact-text-div {
+        height: 30%;
+        width: 50%;
+        padding: 5%;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        z-index: 100;
+    }
+    
+    #contact-text {
+        color: white;
+        font-size: 24px;
+    }
+    
+    #email {
+        width: 500px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    #submit {
+        width: 100px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    
+    #footer-h2 {
+        color: white;
+        font-size: 32px;
+        margin: 5%;
+    }
+}

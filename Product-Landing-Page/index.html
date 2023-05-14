@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product-Landing</title>
+</head>
+
+<body>
+
+    <!-- <header id="header">
+        <div id="header-top-div">
+            <div id="title-div">
+                <div id="img-div">
+                     
+                </div>
+                <h1 id="header-title">Prestige Cars</h1>
+            </div>
+            <nav id="nav-bar">
+                <a class="nav-link" href="#about-us-div">ABOUT</a>
+                <a class="nav-link" href="#products-div">VEHICLES</a>
+                <a class="nav-link" href="#footer-div">CONTACT US</a>
+            </nav>
+        </div>
+    </header> -->
+
+    <header id="header">
+        <nav id="nav-bar">
+            <img id="header-img" src="images/amg-logo.PNG" alt="">
+            <div id="nav-bar-top1">
+                <h1 id="title">Prestige Cars</h1>
+            </div>
+            <div class="nav-divs" id="nav-bar-link-div0">
+                <a class="nav-link" id="nav-links-home" href="#header">HOME</a>
+            </div>
+            <div class="nav-divs" id="nav-bar-link-div1">
+                <a class="nav-link" id="nav-links-about" href="#about-us-div1">ABOUT</a>
+            </div>
+            <div class="nav-divs" id="nav-bar-link-div2">
+                <a class="nav-link" id="nav-links-vehicles" href="#products-div" onmouseover="on()">VEHICLES </a>
+                <div class="sub-menu" id="sub-menu" onmouseover="on()" onmouseout="off()">
+                    <a id="sub-menu-text" href="#product-info1">AUDI</a>
+                    <a id="sub-menu-text" href="#product-info2">BMW</a>
+                    <a id="sub-menu-text" href="#product-info3">MERCEDES</a>
+                </div>
+            </div>
+            <div class="nav-divs" id="nav-bar-link-div3">
+                <a class="nav-link" id="nav-links-contact" href="#footer-div">CONTACT US</a>
+            </div>
+        </nav>
+
+        <nav id="nav-bar-bottom">
+            <h2>Coded by ?</h2>
+        </nav>
+    </header>
+
+    <div id="main-title-div">
+        <h1 id="main-title">Prestige</h1>
+    </div>
+
+    <div id="about-us-div1">
+        <div id="about-us-div2">
+            <h1 id="about-us-title">About us</h1>
+            <p id="about-us-text">
+                We Sell Cars, You Buy Them...
+            </p>
+        </div>
+    </div>
+
+    <div id="products-div">
+        <div id="product-info1">
+            <div id="img-div1">
+                <img id="img1" src="images/2022-audi-rs-e-tron-gt-flip.jpg" alt="">
+                <figcaption id="img-caption">2022 Audi RS e-tron GT</figcaption>
+                <p>Starting at $100,945</p>
+            </div>
+            <div id="video-div1">
+                <video id="video" poster="" preload="auto" controls="" loop="" autoplay="" muted="">
+                    <source src="videos/audi.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div id="product-info2">
+            <div id="video-div2">
+                <video id="video2" poster="" preload="auto" controls="" loop="" autoplay="" muted="">
+                    <source src="videos/bmw.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="img-div2">
+                <img id="img2" src="images/2022-bmw-alpina-b8-gran-coupe.jpg" alt="">
+                <figcaption id="img-caption">2022 BMW ALPINA 8-Series Gran Coupe</figcaption>
+                <p>Starting at $85,995</p>
+            </div>
+        </div>
+        <div id="product-info3">
+            <div id="img-div3">
+                <img id="img3" src="images/2021-mercedes-amg-cls53-flip.jpg" alt="">
+                <figcaption id="img-caption">2021 Mercedes-AMG CLS53</figcaption>
+                <p>Starting at $82,600</p>
+            </div>
+            <div id="video-div3">
+                <video id="video3" poster="" preload="auto" controls="" loop="" autoplay="" muted="">
+                    <source src="videos/merc.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-div">
+        <h1 id="footer-h1">Contact Us</h1>
+        <div id="contact-text-div">
+            <p id="contact-text">
+                For a free consultation please send us your details via email.
+            </p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" name="email" id="email" placeholder="email address">
+                <input type="submit" name="submit" id="submit">
+            </form>
+            <p id="contact-text">
+                Please feel free to send us any questions or enquires via email aswell.
+            </p>
+        </div>
+        <h2 id="footer-h2"></h2>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
+

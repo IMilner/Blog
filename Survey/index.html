@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+
+<body>
+
+    <div id="mainpage">
+        
+        <nav id="nav">
+            <a href="#home"><strong>Home</strong></a>
+            <a href="#homepage"><strong>Other Surveys</strong></a>
+            <a href="#about-us"><strong>About Us</strong></a>
+        </nav>
+        
+        <h1 id="title">Dentist Survey</h1>
+        
+        <p id="description">How often do you go to the dentist?</p>
+
+        <form id="survey-form">
+            <label class="label" id="name-label">Name
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </label>
+
+            <label class="label" id="email-label">Email
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </label>
+
+            <label class="label" id="number-label">Age
+                <input type="number" name="age" id="number" min="5" max="25" placeholder="Enter your age">
+            </label>
+
+            <label class="label" id="label-yes-no">Have you ever been to the dentist?
+                <div class="yes-no-buttons">
+                    <p>
+                        <input class="radio" type="radio" name="yes-no" value="yes" checked />Yes
+                    </p>
+                    <p>
+                        <input class="radio" type="radio" name="yes-no" value="no" />No
+                    </p>
+                </div>
+            </label>
+
+            <label class="label" id="label-dropdown">When was the last time you saw a dentist?
+                <select id="dropdown" name="option" required>
+                    <option disabled selected value="">Please select one</option>
+                    <option value="first">Last Week</option>
+                    <option value="second">Last Month</option>
+                    <option value="third">6 Months +</option>
+                    <option value="fourth">12 Months +</option>
+                    <option value="fifth">24 Months +</option>
+                </select>
+            </label>
+
+            <label class="label" id="label-options">What did you need to see the dentist for?
+                <div class="options">
+                    <div class="option-column">
+                        <p>A good clean<input class="input" type="checkbox" name="Action" value="A good clean"></p>
+                        <p>Crowning<input class="input" type="checkbox" name="Adventure" value="Crowning"></p>
+                        <p>General Check-Up<input class="input" type="checkbox" name="Battle Royale" value="General Check-Up"></p>
+                        <p>Root Cannel<input class="input" type="checkbox" name="Fighting" value="Root Cannel"></p>
+                    </div>
+                    <div class="option-column" id="right">
+                        <p><input class="input" type="checkbox" name="Rougelike" value="Bleaching">Bleaching</p>
+                        <p><input class="input" type="checkbox" name="RPG" value="Filling/Fillings">Filling/Fillings</p>
+                        <p><input class="input" type="checkbox" name="Shooter" value="Plate Fitting">Plate Fitting</p>
+                        <p><input class="input" type="checkbox" name="Other" value="Other">Other</p>
+                    </div>
+                </div>
+            </label>
+
+            <label class="label" id="label-comments">Additional Comments?
+                <p><textarea name="comments" id="comments" cols="20" rows="5"
+                        placeholder="Enter comments here..."></textarea></p>
+            </label>
+
+            <input id="submit" type="submit">
+
+            <footer>
+                <strong>Thank you for completing our survey<br>please come back again</strong>
+                <p>-Coded by ?-</p>
+            </footer>
+        </form>
+    </div>
+
+</body>
+
+</html>

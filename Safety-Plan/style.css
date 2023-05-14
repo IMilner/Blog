@@ -1,0 +1,291 @@
+* {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    /* display: none; */
+    width: 25px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #04aa6d7e;
+    border-radius: 10px;
+    border: #ffffff00 solid 3px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #04aa6d;
+    cursor: pointer;
+}
+
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: url(images/Caribbean-beach.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Container */
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title-h1{
+    font-size: 3em;
+    color: #04aa6d;
+    text-align: center;
+    text-shadow: white 0px 0px 3px;
+    margin: auto;
+  
+}
+
+h1,h2,h3 {
+    color: white;
+    text-align: center;
+    text-shadow: black 0px 0px 3px;
+    /* margin: auto; */
+}
+
+h4 {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: black 0px 0px 3px;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.5em;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Style the form */
+#regForm {
+    box-sizing: border-box;
+    /* padding: 40px; */
+    /* padding-top: auto; */
+    /* padding-bottom: auto; */
+    min-height:60%;
+    max-height:60%;
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+/* Style the input fields */
+input {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.5em;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+    
+}
+
+/* Circle div */
+#circle-div {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 25px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: white;
+    border: #04aa6d solid 1px;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04aa6d;
+}
+
+/* Style Buttons */
+button {
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 1.5em Raleway;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+.btn-section {
+    display: none;
+    text-align: center;
+    margin: 20px;
+}
+
+
+@media(max-width:1440px){
+    /* Container */
+    .container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    /* Style the form */
+    #regForm {
+        box-sizing: border-box;
+        /* padding: 40px; */
+        /* padding-top: auto; */
+        /* padding-bottom: auto; */
+        min-height:60%;
+        max-height:60%;
+        width: 100%;
+        overflow: auto;
+        margin: auto;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
+@media(max-width:1024px){
+
+    /* Style the form */
+    #regForm {
+        box-sizing: border-box;
+        /* padding: 40px; */
+        /* padding-top: auto; */
+        /* padding-bottom: auto; */
+        min-height:60%;
+        max-height:60%;
+        width: 100%;
+        overflow: auto;
+        margin: auto;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media(max-width:817px){
+
+    /* Style the form */
+    #regForm {
+        box-sizing: border-box;
+        /* padding: 40px; */
+        /* padding-top: auto; */
+        /* padding-bottom: auto; */
+        min-height:60%;
+        max-height:60%;
+        width: 100%;
+        overflow: auto;
+        margin: auto;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media(max-width:768px){
+
+    /* Style the form */
+    #regForm {
+        box-sizing: border-box;
+        /* padding: 40px; */
+        /* padding-top: auto; */
+        /* padding-bottom: auto; */
+        min-height:60%;
+        max-height:60%;
+        width: 100%;
+        overflow: auto;
+        margin: auto;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media(max-width:425px){
+
+    /* Style the form */
+    #regForm {
+        box-sizing: border-box;
+        /* padding: 40px; */
+        /* padding-top: auto; */
+        /* padding-bottom: auto; */
+        min-height:60%;
+        max-height:60%;
+        width: 100%;
+        overflow: auto;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .step {
+        height: 20px;
+        width: 20px;
+        margin: 0 2px;
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        display: inline-block;
+        opacity: 0.5;
+    }
+
+    /* Style Buttons */
+    button {
+        cursor: pointer;
+        box-sizing: border-box;
+        margin: 0em;
+        font: 1.5em Raleway;
+        padding: 0 5px;
+        margin: 0 5px;
+    }
+
+    .btn-section {
+        display: none;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    ::-webkit-scrollbar{
+        display: none;
+        width: 20px;
+    }
+}

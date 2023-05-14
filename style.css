@@ -182,14 +182,14 @@ header hr {
     font-weight: lighter;
 }
 .modal-body {
-    padding: 25px 25px;
+    padding: 25px 100px;
 }
 .modal-body p {
     color: white;
     font-size: 1.5em;
     font-family: 'serif';
     font-weight: lighter;
-    line-height: 2em;
+    line-height: 1.5em;
     text-align: center;
 }
 .leftBdy {
